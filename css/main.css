@@ -1,0 +1,210 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #201b2d;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+div, p, input, button, form, span, a, ul, li{
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 37px;
+    margin: 0;
+}
+.animated{
+    opacity: 0;
+}
+.header{
+    background: rgba(78,192,254,1);
+    background: -moz-linear-gradient(-45deg, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(78,192,254,1)), color-stop(100%, rgba(55,144,217,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: linear-gradient(135deg, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ec0fe', endColorstr='#3790d9', GradientType=1 );
+    padding-top: 97px;
+    padding-bottom: 210px;
+    color: #fff;
+    box-sizing: border-box;
+}
+.header span{
+    text-transform: uppercase;
+    font-size: 59px;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.offer{
+    margin-top: 145px;
+}
+.title{
+    width: 495px;
+    font-size: 36px;
+}
+.text{
+    width: 380px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.65em;
+}
+.btn{
+    width: 220px;
+    background: #ffd429;
+    padding: 18px 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    color: #2e2a1b;
+    display: block;
+    transition: all 0.5s ease;
+}
+.btn:hover{
+    background: #FFC332;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.learn{
+    padding-top: 105px;
+    padding-bottom: 118px;
+}
+.section-title{
+    text-align: center;
+    font-size: 30px;
+}
+.skills{
+    display: flex;
+    justify-content: space-between;
+}
+.skill{
+    margin-top: 78px;
+    background: url('../img/icon-one.jpg') no-repeat center top;
+    text-align: center;
+    width: 350px;
+}
+.skill p{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+.skill-free{
+    background: url('../img/icon-two.jpg') no-repeat center top;
+    width: 380px;
+}
+.skill-change{
+    background: url('../img/icon-three.jpg') no-repeat center top;
+}
+.skill-title{
+    font-size: 18px;
+    margin-top: 88px;
+}
+.mail{
+    background: #efecf4;
+    padding-top: 102px;
+    padding-bottom: 103px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+}
+.input{
+    display: block;
+    margin: 0 auto;
+    width: 340px;
+    height: 55px;
+    border: 1px solid #bfb8d1;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 40px;
+    margin-bottom: 15px;
+}
+.btn-form{
+    width: 340px;
+    border: 0;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 15px;
+}
+.footer{
+    background: #164d7a;
+}
+.credits{
+    font-size: 14px;
+    color: #d4cee3;
+    margin: 0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/*------------------------------------------ Responsive --------------------------------------------------------*/
+
+@media screen and (max-width: 1200px){
+    .container{
+        width: 960px;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .offer{
+        margin: 0 auto;
+    }
+    .logo{
+        display: block;
+        margin: 0 auto;
+    }
+    .btn{
+        width: 100%;
+    }
+    .desktop{
+        width: 540px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .skills{
+        flex-direction: column;
+    }
+    .skill{
+        width: 100%;
+    }
+    .input{
+        width: 100%;
+    }
+    .btn-form{
+        margin: 0;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 992px){
+    .container{
+        width: 720px;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        width: 540px;
+    }
+    .desktop{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 576px){
+    .container{
+        width: 90%;
+    }
+    .title{
+        width: auto;
+    }
+    .text{
+        width: auto;
+    }
+}
